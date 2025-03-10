@@ -5,6 +5,7 @@
   "scripts": {
     "build": "rm -rf ./build && npm run openapigen && vite build",
     "build:static": "ADAPTER=static npm run build",
+    "build:windows": "node build-windows.js",
     "dev": "npm run openapigen && vite dev --host 0.0.0.0",
     "preview": "npm run openapigen && vite preview",
     "prepare": "svelte-kit sync || echo ''",
@@ -34,6 +35,7 @@
     "@sveltejs/vite-plugin-svelte": "5.0.3",
     "@tailwindcss/vite": "4.0.6",
     "@types/fluent-ffmpeg": "2.1.27",
+    "@types/node": "^22.13.10",
     "daisyui": "5.0.0-beta.8",
     "lucide-svelte": "0.475.0",
     "prettier": "3.5.0",
